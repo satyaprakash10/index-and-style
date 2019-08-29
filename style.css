@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background: #f6f6f6;
+}
+ 
+.navbar { 
+  position: fixed;
+  z-index: 100;
+}
+ 
+.sidebar-image{ 
+  border-radius:50%;
+  width: 30px;
+  height: 30px;  
+  border: 5px   #4337a4;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.sidebar {
+  margin: 0;
+  width: 200px;
+  background-color: #4337a4;
+  position: fixed;
+  padding-top: 10px;
+  height: 100%;
+  list-style: none;
+  overflow: hidden;
+  display: block;
+  color:  #b6b3cc;
+  padding: 0px;
+  z-index: 1;
+  padding-top: 64px;
+  text-decoration: none;
+  transition: 1.5s;
+}
+
+.sidebar li a {
+  display: block;
+  color:  #b6b3cc;
+  padding: 11px 12px 12px 20px;
+  text-decoration: none;
+}
+ 
+.sidebar li a.active {
+  background-color: white;
+  color:  #b6b3cc;
+  
+}
+
+.sidebar li a:hover:not(.active) {
+  background-color: #b6b3cc;
+  color: white;
+}
+
+.icons-bar {
+  display: none;
+}
+ 
+.search-box {
+  width: 1200px;
+  float: left;
+  margin-left: 14px;
+ }
+
+.main-content {
+  background: #f6f6f6;
+  padding-left: 250px;
+  margin-top: 7%;
+  position: absolute;
+   
+}
+
+.card-icons {
+  font-size: 30px;
+  color: blue;
+  margin-top: 7%;
+  background: #f6f6f6;
+}
+ 
+.font-color {
+  color: blue;
+}
+   
+@media screen and (max-width: 768px) {
+  .sidebar {
+    left: -355px;
+    display: block;
+    z-index: 30;
+    padding-top: 64px;
+
+  }
+  .icons-bar {
+    display: block;
+    margin-left: 10px;
+    font-size: 30px;
+  }
+  .sidebar li a {
+    display: flex;
+    justify-content: center;
+    padding:  2px 37px 30px 21px;
+  }
+  .sidebar-image {
+    display:block;
+    /* margin-left: 20px; */
+  }
+  .dropdown {
+    display: block;
+    margin-left: 160px;
+  }
+}
+  
+  @media screen and (max-width: 400px) {
+  .sidebar a {
+    /* display: flex;
+    justify-content: center; */
+  }
+}  
+@media screen and (max-width:960px)
+{
+  .main-content {
+    display:block;
+    padding-left:50px;
+    margin-right: 10%;
+    padding-top: 5%;
+    margin-top: 50px;
+}
+  .search-box {
+    margin-right: 10%;
+    width: auto;
+  }
+
+  .section-style {
+     margin-left: 10px;
+  }
+}
